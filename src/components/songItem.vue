@@ -1,6 +1,11 @@
 <template>
   <div>
-    <van-cell center :title="name" :label="author + ' ' + name">
+    <van-cell
+      center
+      :title="name"
+      :label="author + ' ' + name"
+      @click="$router.push({ path: '/comment', query: { id: id } })"
+    >
       <!-- 使用 right-icon 插槽来自定义右侧图标 -->
       <template #right-icon>
         <van-icon name="play-circle-o" @touchstart="playFn" />

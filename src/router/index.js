@@ -5,6 +5,7 @@ import Layout from '@/view/Layout'
 import Home from '@/view/Home'
 import Search from '@/view/Search'
 import Play from '@/view/Play'
+import Comment from '@/view/Comment'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,10 @@ const routes = [
   {
     path: '/play',
     component: Play
+  },
+  {
+    path: '/comment',
+    component: Comment
   }
 ]
 

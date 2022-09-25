@@ -38,3 +38,10 @@ export const getLyricByIdAPI = id => {
     url: `/lyric?id=${id}`
   })
 }
+
+export const getComment = params => {
+  return request({
+    url: '/comment/music',
+    params
+  })
+}
